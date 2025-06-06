@@ -3,34 +3,24 @@ import styles from "./MyGrid.module.css";
 export function MyGrid() {
   return (
     <div className={styles.container}>
-      <header className={styles.header1} />
-      <header className={styles.header2} />
-      <aside className={styles.aside} />
-      <div className={styles.main}>
+      <header className={styles.header1}>Header 1</header>
+      <aside className={styles.asideLeft}>Aside Esquerdo</aside>
+      <header className={styles.header2}>Header 2</header>
+      <aside className={styles.asideRight}>Aside Direito</aside>
+
+      <main className={styles.main}>
         <div className={styles.grid}>
-          <div className={styles.card}>
-            <h2>Card 1</h2>
-            <p>This is the first card.</p>
-          </div>
-          <div className={styles.card}>
-            <h2>Card 2</h2>
-            <p>This is the second card.</p>
-          </div>
-          <div className={styles.card}>
-            <h2>Card 3</h2>
-            <p>This is the third card.</p>
-          </div>
-          <div className={styles.card}>
-            <h2>Card 4</h2>
-            <p>This is the fourth card.</p>
-          </div>
-          <div className={styles.card}>
-            <h2>Card 5</h2>
-            <p>This is the fifth card.</p>
-          </div>
+          {[1, 2, 3, 4, 5].map((i) => (
+            <div className={styles.card} key={i}>
+              <h2 className={styles.title}>Card {i}</h2>
+              <p className={styles.text}>Conteúdo do card {i}.</p>
+            </div>
+          ))}
         </div>
-      </div>
-      <footer className={styles.footer} />
+      </main>
+
+      <footer className={styles.footer1}>Footer Verde</footer>
+      <footer className={styles.footer2}>Footer Rosa</footer>
     </div>
   );
 }
