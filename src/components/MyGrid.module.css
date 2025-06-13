@@ -53,7 +53,7 @@
 
 .footer2 {
   grid-area: footer2;
-  background-color: pink;
+  background-color: rgb(160, 43, 62);
   display: flex;
   align-items: center;
   justify-content: center;

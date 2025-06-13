@@ -1,0 +1,58 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #e3e3e3;
+  color: #000;
+  padding: 1.5rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 550;
+}
+
+.left,
+.center,
+.right {
+  flex: 1;
+  min-width: 180px;
+}
+
+/* centro destacado */
+.center {
+  text-align: center;
+  color: #0f2eab;
+  align-self: center;
+  font-family: "Arial", sans-serif;
+  font-style: italic;
+}
+
+/* botões à direita */
+.right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.iconLink {
+  background: #0f2eab;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+  text-decoration: none;
+}
+
+
+/* MEDIA QUERY: abaixo de 500px, centraliza tudo */
+@media (max-width: 500px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  .right {
+    justify-content: center;
+  }
+}
