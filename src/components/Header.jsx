@@ -5,7 +5,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.logoGroup}>
         <img src="/tempo.png" alt="Tempo" className={styles.logo} />
-        <h1 className={styles.title}>Foco, Força e Fé</h1>
+        <h1 className={styles.title}>Foco, Força, Fé</h1>
       </div>
     </header>
   );
