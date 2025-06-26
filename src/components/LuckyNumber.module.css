@@ -22,3 +22,7 @@
     background-color: var(--secondary);
     transform: scale (1.05);
 }
+.buttons {
+    display: flex;
+    gap: 1rem;
+}

@@ -1,40 +1,53 @@
-
-import styles from "./LuckyNumber.module.css";
 import { useState } from "react";
+import styles from "./LuckyNumber.module.css";
 
 export function LuckyNumber() {
-
+  //REACT HOOK - useState()
   const [luckyNumber, setLuckyNumber] = useState(0);
-  const [saveNumber, setSaveNumber] = useState([]);
+  const [array, setArray] = useState([]);
   const [message, setMessage] = useState("");
 
-  
   function handleClick() {
-    const number = Math.ceil(Math.random() * 31);
+    var n = Math.ceil(Math.random() * 31);
+    setLuckyNumber(n);
 
-    if (saveNumber.includes(number)) {
-      setMessage(`Número ${number} já foi sorteado!`);
+    if (array.includes(n)) {
+      setMessage(`The number ${n} is already picked!`);
     } else {
-      setLuckyNumber(number);
-      setSaveNumber((prev) => [...prev, number]);
-      setMessage(`Número ${number} sorteado com sucesso!`);
+      setMessage("");
+      setArray([...array, n]);
     }
   }
 
   return (
     <div className={styles.container}>
-      <button
-        onClick={handleClick}
-        className={styles.button}
-      >
-        Clique e sorteie
-      </button>
-
-      {message && (
-        <p className={styles.message}>{message}</p>
+      {luckyNumber ? (
+        <h1>Lucky Number = {luckyNumber}</h1>
+      ) : (
+        <h1>Lucky Number 🎲</h1>
+      )}
+      <div className={styles.buttons}>
+        <button className={styles.button} onClick={handleClick}>
+         Teste sua sorte!🎉
+        </button>
+        <button
+          className={styles.button}
+          onClick={() => {
+            setLuckyNumber(0);
+            setArray([]);
+            setMessage("");
+          }}
+        >
+          RESET 🔄
+        </button>
+      </div>
+      {message && <p>{message}</p>}
+      {array.length > 0 && (
+        <div>
+          <h3>Lucky Numbers Array:</h3>
+          <p>[{array.toString()}]</p>
+        </div>
       )}
     </div>
   );
 }
-
-export default LuckyNumber;
