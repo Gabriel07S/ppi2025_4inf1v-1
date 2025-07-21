@@ -1,0 +1,189 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+  padding-top: 120px;
+  margin-top: 20px;
+  color: #000;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.cart h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #111;
+  text-align: center;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 800px;
+}
+
+.cart li {
+  background-color: white;
+  border-radius: 8px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.cart li img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-right: 0.5rem;
+}
+
+.cart li h3 {
+  font-size: 1.5rem; /* aumente para deixar maior */
+  margin: 0 0 0.2rem 0;
+}
+
+.cart li p {
+  margin: 0.2rem 0;
+  font-size: 1.3rem; /* aumente para deixar maior */
+}
+
+.removeAllBtn {
+  background-color: #dc2626;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.quantityControl {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+.quantityControl button {
+  padding: 0.2rem 0.5rem;
+  font-size: 1.4rem; /* aumente para deixar maior */
+  background-color: #1d4ed8;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  margin: 0 0.2rem;
+  cursor: pointer;
+}
+
+.quantityControl span {
+  font-size: 0.8rem;
+  min-width: 20px;
+  text-align: center;
+}
+
+.summaryBox {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.summaryBox h3 {
+  font-size: 1.2rem; /* aumente para 1.4rem, 1.6rem, etc */
+  margin-bottom: 0.5rem;
+}
+
+.summaryBox p {
+  margin: 0.3rem 0;
+  font-size: 1.1rem; /* adicione ou aumente aqui */
+}
+
+.continueBtn {
+  background-color: #f97316;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 180px;
+  margin-top: 0.8rem;
+}
+
+.services {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 2px solid #f97316;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.services h3 {
+  font-size: 1.2rem; /* aumente para 1.4rem, 1.6rem, etc */
+  margin-bottom: 0.5rem;
+  color: #f97316;
+}
+
+.serviceOptions {
+  margin-bottom: 0.5rem;
+}
+
+.serviceOptions label {
+  display: block;
+  margin: 0.3rem 0;
+  font-weight: bold;
+  color: #111;
+  font-size: 1.1rem; /* adicione ou aumente aqui */
+}
+
+.serviceOptions input {
+  margin-right: 0.5rem;
+}
+
+.serviceTotal {
+  font-size: 1.1rem; /* aumente para 1.3rem, 1.5rem, etc */
+  font-weight: bold;
+  color: #f97316;
+  margin-top: 0.5rem;
+}
+
+.paymentBox {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  border: 2px solid #f97316;
+}
+
+.paymentBox h3 {
+  font-size: 1.2rem; /* aumente para 1.4rem, 1.6rem, etc */
+  margin-bottom: 0.5rem;
+  color: #f97316;
+}
+
+.paymentInstallments {
+  margin: 0.5rem 0;
+  font-size: 1.1rem; /* adicione ou aumente aqui */
+}
+
+.paymentPix {
+  background-color: #d1fae5;
+  padding: 0.5rem;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+  font-size: 1.1rem; /* adicione ou aumente aqui */
+}
+

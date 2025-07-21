@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #ff7904;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logoArea {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: auto;
+  width: 12rem;
+}
+
+.cartInfo {
+  border-radius: 1.5rem;
+  background-color: #0070C9;
+  color: rgb(255, 255, 255);
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.cartInfo p {
+  margin: 0;
+}
+
+.backBtn {
+  background-color: #0070C9;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-bottom: 1.2rem; /* aumente esse valor para mais espaço */
+}

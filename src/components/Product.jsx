@@ -1,14 +1,17 @@
 import styles from "./Product.module.css";
 
-export function Product({ thumbnail, title, description, price }) {
+export function Product({ product, addToCart }) {
   return (
-      <div className={styles.card}>
- <img src={thumbnail} alt={title} className={styles.image} />
- <h2>{title}</h2>
-<p>{description}</p>
- <p>R$ {price}</p>
-<button>Adicionar ao carrinho</button>
-</div>
-);
+    <div key={product.id} className={styles.productCard}>
+      <img
+        src={product.thumbnail}
+        alt={product.title}
+        className={styles.productImage}
+      />
+      <h2 className={styles.productTitle}>{product.title}</h2>
+      <p className={styles.productDescription}>{product.description}</p>
+      <p className={styles.productPrice}>${product.price}</p>
+      <button onClick={() => addToCart(product)} className={styles.productButton}>ADD TO CART</button>
+    </div>
+  );
 }
-                                          
