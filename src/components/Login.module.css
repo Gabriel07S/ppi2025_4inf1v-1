@@ -1,0 +1,40 @@
+.loginBox {
+  max-width: 350px;
+  margin: 60px auto;
+  background: #f0f0f0;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px #0001;
+  text-align: center;
+  margin-top: 120px; /* aumenta o espaço do topo */
+}
+.loginBox h2 {
+  color: #0070C9;
+  margin-bottom: 1rem;
+}
+.loginBox label {
+  display: block;
+  margin: 1rem 0 0.2rem 0;
+  color: #333;
+  font-weight: bold;
+}
+.loginBox input {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  border: 1px solid #0070C9;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.loginBox button {
+  background: #0070C9;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.loginBox button:hover {
+  background: #005fa3;
+}

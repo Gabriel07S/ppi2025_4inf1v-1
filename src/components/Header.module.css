@@ -1,8 +1,8 @@
 .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
+  justify-content: center; /* força centralização */
+  gap: 3rem; /* aumenta o espaço entre logo, botões e carrinho */
   padding: 0.5rem 1.5rem;
   background-color: #ff7904;
   position: fixed;
@@ -38,7 +38,14 @@
 
 .link {
   text-decoration: none;
-  color: var(--primary);
+  color: #0070C9;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: #f97316;
 }
 
 .cartInfo p {
@@ -51,5 +58,53 @@
   padding: 0.5rem 1rem;
   border-radius: 6px;
   text-decoration: none;
-  margin-bottom: 1.2rem; /* aumente esse valor para mais espaço */
+  margin-bottom: 1.2rem;
+}
+
+.cart-icon-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: orange;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.2em 0.6em;
+  font-size: 1.1rem;
+  font-weight: bold;
+  z-index: 1;
+  min-width: 1.5em;
+  text-align: center;
+  box-shadow: 0 0 2px #0005;
+}
+
+/* Centraliza mais os três botões */
+.navLinks {
+  display: flex;
+  gap: 1.5rem;
+  flex-grow: 1; /* ocupa espaço extra para ajudar centralizar */
+  justify-content: center; /* centraliza horizontalmente */
+}
+
+.navButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #0070C9;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.navButton:hover {
+  background-color: #f97316;
+  transform: scale(1.05);
 }

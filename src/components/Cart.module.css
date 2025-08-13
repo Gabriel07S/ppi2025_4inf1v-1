@@ -187,3 +187,17 @@
   font-size: 1.1rem; /* adicione ou aumente aqui */
 }
 
+.trashBtn {
+  background: none;
+  border: none;
+  color: #ff3333;
+  cursor: pointer;
+  margin-left: 0.7rem;
+  font-size: 1.3rem;
+  transition: color 0.2s;
+}
+
+.trashBtn:hover {
+  color: #b30000;
+}
+

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"; // Importando useState e useEffect
+import { useState, useEffect } from "react"; 
 import styles from "./Cart.module.css";
 
 export function Cart({ cart, setCart }) {
@@ -71,6 +71,18 @@ export function Cart({ cart, setCart }) {
                   <button onClick={() => decreaseQuantity(index)}>-</button>
                   <span>{product.quantity || 1}</span>
                   <button onClick={() => increaseQuantity(index)}>+</button>
+                  {/* Botão da lixeira com emoji */}
+                  <button
+                    className={styles.trashBtn}
+                    onClick={() => {
+                      const novoCarrinho = [...cart];
+                      novoCarrinho.splice(index, 1);
+                      setCart(novoCarrinho);
+                    }}
+                    title="Remover este item"
+                  >
+                    🗑️
+                  </button>
                 </div>
               </li>
             ))}
