@@ -79,6 +79,7 @@ export function CartProvider({ children }) {
     clearCart: clearCart,
   };
 
+  
   return (
     <CartContext.Provider value={context}>{children}</CartContext.Provider>
   );
