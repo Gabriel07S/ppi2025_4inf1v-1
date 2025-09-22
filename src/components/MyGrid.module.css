@@ -47,7 +47,7 @@
 
 .header2 {
   grid-area: header2;
-  background-color: deepskyblue;
+  background-color: rgb(115, 255, 0);
 }
 
 .aside {
