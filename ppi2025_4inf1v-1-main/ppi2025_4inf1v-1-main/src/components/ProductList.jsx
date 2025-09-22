@@ -48,6 +48,9 @@ export function ProductList() {
         </button>
       </div>
       <div className={styles.productList}>
+        {filteredProducts.length === 0 && !loading && !error && (
+          <p>Nenhum produto encontrado.</p>
+        )}
         {filteredProducts.map((product) => (
           <Product key={product.id} product={product} />
         ))}

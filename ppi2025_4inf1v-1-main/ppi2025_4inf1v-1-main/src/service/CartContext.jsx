@@ -27,8 +27,9 @@ export function CartProvider({ children }) {
     async function fetchProducts() {
       try {
         const response = await fetch(apiUrl);
-        const data = await response.json();
-        setProducts(data.products);
+  const data = await response.json();
+  console.log('Produtos recebidos da API:', data);
+  setProducts(data.products);
       } catch (error) {
         setError(error);
       } finally {
