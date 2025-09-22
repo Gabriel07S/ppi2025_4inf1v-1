@@ -52,7 +52,7 @@
 
 .aside {
   grid-area: aside;
-  background-color: deeppink;
+  background-color: rgb(90, 0, 235) 96, 159);
 
   @media (max-width: 1200px) {
     display: none;
